@@ -94,35 +94,34 @@ import XfeiModule from 'react-native-xfmsc';
 ### 接口列表
 
 1. 设置参数：
-setParameter(String key, String value)
+    setParameter(String key, String value)
 
-key：参数名，具体参数列表请参考讯飞语音云SDK。
+    key：参数名，具体参数列表请参考讯飞语音云SDK。
 
-value：参数值，具体请参考讯飞语音云SDK。
+    value：参数值，具体请参考讯飞语音云SDK。
 
 2. 开始录音评测：
-startRecord(String evalPaper, String category)
+    startRecord(String evalPaper, String category)
 
-evalPaper - 评测内容试卷，试卷格式请参考讯飞语音云SDK。
+    evalPaper - 评测内容试卷，试卷格式请参考讯飞语音云SDK。
 
-category - 评测题型，可以是字、词、篇章，具体请参考讯飞语音云SDK。
+    category - 评测题型，可以是字、词、篇章，具体请参考讯飞语音云SDK。
 
 3. 停止录音：
-stopRecord()
+    stopRecord()
 
 4. 取消：
-cancel()
+    cancel()
 
 5. 事件回调：
-onISECallback(body)
+    onISECallback(body)
 
-回调内容为json对象，包含以下字段：
-- type，包括：
-- file: 录音文件，评测完毕后可以回放
-  - result: 评测结果 XML 格式
-  - volumn: 录音音量，应用程序可据此进行音量显示
-  - error: 错误消息
+    回调内容为json对象，包含以下字段：
+    - type，包括：
+    - file: 录音文件，评测完毕后可以回放
+      - result: 评测结果 XML 格式
+      - volumn: 录音音量，应用程序可据此进行音量显示
+      - error: 错误消息
 
-- msg： 回调消息
-- data： 回调具体内容
-
+    - msg： 回调消息
+    - data： 回调具体内容
