@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		110683891E865DBA001352B5 /* Xfei.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 110683861E865DBA001352B5 /* Xfei.h */; };
+		1106844C1E867087001352B5 /* Xfei.m in Sources */ = {isa = PBXBuildFile; fileRef = 110683871E865DBA001352B5 /* Xfei.m */; };
+		95D7271C1F96E5B50015EC41 /* iflyMSC in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D7271B1F96E5B50015EC41 /* iflyMSC */; };
+		95E0815E1FA0279400F3A070 /* PcmUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E0815D1FA026F100F3A070 /* PcmUtil.m */; };
+		95E0BA141F9749A200D89650 /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E0BA131F9749A200D89650 /* iflyMSC.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		110683811E865DBA001352B5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				110683891E865DBA001352B5 /* Xfei.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		110683831E865DBA001352B5 /* libXfei.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libXfei.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		110683861E865DBA001352B5 /* Xfei.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Xfei.h; sourceTree = "<group>"; };
+		110683871E865DBA001352B5 /* Xfei.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Xfei.m; sourceTree = "<group>"; };
+		95D7271B1F96E5B50015EC41 /* iflyMSC */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = iflyMSC; path = iflyMSC.framework/iflyMSC; sourceTree = "<group>"; };
+		95E0815C1FA026F100F3A070 /* PcmUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PcmUtil.h; sourceTree = "<group>"; };
+		95E0815D1FA026F100F3A070 /* PcmUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PcmUtil.m; sourceTree = "<group>"; };
+		95E0B9EA1F9726B400D89650 /* Definition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Definition.h; sourceTree = "<group>"; };
+		95E0B9EB1F9726BB00D89650 /* ise */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ise; sourceTree = "<group>"; };
+		95E0BA131F9749A200D89650 /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		110683801E865DBA001352B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E0BA141F9749A200D89650 /* iflyMSC.framework in Frameworks */,
+				95D7271C1F96E5B50015EC41 /* iflyMSC in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1106837A1E865DBA001352B5 = {
+			isa = PBXGroup;
+			children = (
+				95E0815B1FA026F100F3A070 /* pcmutil */,
+				95E0B9EB1F9726BB00D89650 /* ise */,
+				95E0B9EA1F9726B400D89650 /* Definition.h */,
+				110683851E865DBA001352B5 /* Xfei */,
+				110683841E865DBA001352B5 /* Products */,
+				110683941E865F4C001352B5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		110683841E865DBA001352B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				110683831E865DBA001352B5 /* libXfei.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		110683851E865DBA001352B5 /* Xfei */ = {
+			isa = PBXGroup;
+			children = (
+				110683861E865DBA001352B5 /* Xfei.h */,
+				110683871E865DBA001352B5 /* Xfei.m */,
+			);
+			path = Xfei;
+			sourceTree = "<group>";
+		};
+		110683941E865F4C001352B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95E0BA131F9749A200D89650 /* iflyMSC.framework */,
+				95D7271B1F96E5B50015EC41 /* iflyMSC */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95E0815B1FA026F100F3A070 /* pcmutil */ = {
+			isa = PBXGroup;
+			children = (
+				95E0815C1FA026F100F3A070 /* PcmUtil.h */,
+				95E0815D1FA026F100F3A070 /* PcmUtil.m */,
+			);
+			path = pcmutil;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		110683821E865DBA001352B5 /* Xfei */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1106838C1E865DBA001352B5 /* Build configuration list for PBXNativeTarget "Xfei" */;
+			buildPhases = (
+				1106837F1E865DBA001352B5 /* Sources */,
+				110683801E865DBA001352B5 /* Frameworks */,
+				110683811E865DBA001352B5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Xfei;
+			productName = Xfei;
+			productReference = 110683831E865DBA001352B5 /* libXfei.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1106837B1E865DBA001352B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = xukankan;
+				TargetAttributes = {
+					110683821E865DBA001352B5 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1106837E1E865DBA001352B5 /* Build configuration list for PBXProject "Xfei" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1106837A1E865DBA001352B5;
+			productRefGroup = 110683841E865DBA001352B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				110683821E865DBA001352B5 /* Xfei */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1106837F1E865DBA001352B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E0815E1FA0279400F3A070 /* PcmUtil.m in Sources */,
+				1106844C1E867087001352B5 /* Xfei.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1106838A1E865DBA001352B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1106838B1E865DBA001352B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1106838D1E865DBA001352B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../example/test/node_modules/react-native/React/**",
+					"$(SRCROOT)/ise/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iflyMSC.framework",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1106838E1E865DBA001352B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../example/test/node_modules/react-native/React/**",
+					"$(SRCROOT)/ise/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iflyMSC.framework",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1106837E1E865DBA001352B5 /* Build configuration list for PBXProject "Xfei" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1106838A1E865DBA001352B5 /* Debug */,
+				1106838B1E865DBA001352B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1106838C1E865DBA001352B5 /* Build configuration list for PBXNativeTarget "Xfei" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1106838D1E865DBA001352B5 /* Debug */,
+				1106838E1E865DBA001352B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1106837B1E865DBA001352B5 /* Project object */;
+}

@@ -1,0 +1,5 @@
+build
+iFLYSE-SDK
+*.xcuserstate
+.idea
+.gradle

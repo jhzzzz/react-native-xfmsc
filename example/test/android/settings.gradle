@@ -1,0 +1,5 @@
+rootProject.name = 'test'
+
+include ':react-native-xfmsc'
+project(':react-native-xfmsc').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-xfmsc/android')
+include ':app'
