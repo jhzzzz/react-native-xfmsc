@@ -103,16 +103,6 @@ RCT_EXPORT_METHOD(stopRecord){
     }
     else {
         [self.iFlySpeechEvaluator stopListening];
-        
-        //转换
-        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
-        NSString *cachePath = [paths objectAtIndex:0];
-        NSString *pcmFile = [NSString stringWithFormat:@"%@/%@", cachePath, @"ise.pcm"];
-        NSString *wavFile = [NSString stringWithFormat:@"%@/%@", cachePath, @"ise.wav"];
-
-        PcmUtil *wavUtil = [[PcmUtil alloc] pcmToWavFile:pcmFile sampleRate:16000 topath:wavFile];
-        //[audioPlayer dealloc];
-        [self callback:@"file" msg:@"" data:wavFile];
     }
     
     NSLog(@"%s[OUT]",__func__);
@@ -228,6 +218,15 @@ RCT_EXPORT_METHOD(cancel){
     }
     else{
         if(isLast){
+            //转换
+            NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+            NSString *cachePath = [paths objectAtIndex:0];
+            NSString *pcmFile = [NSString stringWithFormat:@"%@/%@", cachePath, @"ise.pcm"];
+            NSString *wavFile = [NSString stringWithFormat:@"%@/%@", cachePath, @"ise.wav"];
+            
+            PcmUtil *wavUtil = [[PcmUtil alloc] pcmToWavFile:pcmFile sampleRate:16000 topath:wavFile];
+            //[audioPlayer dealloc];
+            [self callback:@"file" msg:@"" data:wavFile];
             [self callback:@"result" msg:@"eval finished no result" data:@""];
         }
         self.isSessionEnd=  YES;
