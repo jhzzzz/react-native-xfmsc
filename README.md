@@ -110,19 +110,14 @@ category - 评测题型，可以是字、词、篇章，具体请参考讯飞语
 `cancel()`
 
 5. 事件回调：
-`onISECallback(body)`
-`type：` 
-包括：
-> file: 录音文件，评测完毕后可以回放
-> result: 评测结果 XML 格式
-> volumn: 录音音量，应用程序可据此进行音量显示
-> error: 错误消息
+onISECallback(body)
+回调内容为json对象，包含以下字段：
+- type，包括：
+- file: 录音文件，评测完毕后可以回放
+  - result: 评测结果 XML 格式
+  - volumn: 录音音量，应用程序可据此进行音量显示
+  - error: 错误消息
 
-`msg：` 回调消息
-`data：` 回调具体内容
-
-
-
-
-
+- msg： 回调消息
+- data： 回调具体内容
 
