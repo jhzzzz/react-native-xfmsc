@@ -212,12 +212,6 @@ RCT_EXPORT_METHOD(cancel){
         self.isSessionEnd = YES;
         if(isLast){
             NSLog(@"speech finished!");
-            [self callback:@"result" msg:@"eval finished success" data:showText];
-        }
-        
-    }
-    else{
-        if(isLast){
             //转换
             NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
             NSString *cachePath = [paths objectAtIndex:0];
@@ -227,6 +221,12 @@ RCT_EXPORT_METHOD(cancel){
             PcmUtil *wavUtil = [[PcmUtil alloc] pcmToWavFile:pcmFile sampleRate:16000 topath:wavFile];
             //[audioPlayer dealloc];
             [self callback:@"file" msg:@"" data:wavFile];
+            [self callback:@"result" msg:@"eval finished success" data:showText];
+        }
+        
+    }
+    else{
+        if(isLast){
             [self callback:@"result" msg:@"eval finished no result" data:@""];
         }
         self.isSessionEnd=  YES;
