@@ -127,4 +127,4 @@ import XfeiModule from 'react-native-xfmsc';
       - _error_: 错误消息
 
     - _msg_： 回调消息
-    - _data_： 回调具体内容
+    - _data_： 回调具体内容 
